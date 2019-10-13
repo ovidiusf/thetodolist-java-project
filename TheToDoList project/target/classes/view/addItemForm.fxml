@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AddItemFormController">
+   <children>
+      <JFXTextField fx:id="taskField" focusColor="#c62828" layoutX="105.0" layoutY="138.0" prefHeight="67.0" prefWidth="591.0" promptText="Task" unFocusColor="#ab1b9d">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="descriptionField" focusColor="#c62828" layoutX="105.0" layoutY="218.0" prefHeight="67.0" prefWidth="591.0" promptText="Description" unFocusColor="#c37dbd">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="saveTaskButton" layoutX="289.0" layoutY="387.0" prefHeight="51.0" prefWidth="222.0" style="-fx-background-color: #c62828;" text="Save Task" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane prefHeight="90.0" prefWidth="800.0" style="-fx-background-color: #c62828;">
+         <children>
+            <Label layoutX="107.0" layoutY="23.0" text="Add new item" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="33.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="logoutAddItemForm" alignment="CENTER" layoutX="651.0" layoutY="26.0" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: #8e0000;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Tai Le" size="14.0" />
+               </font>
+            </JFXButton>
+            <MenuBar fx:id="addItemFormMenu" prefWidth="55.0" style="-fx-background-color: #c62828;" stylesheets="@../css/style.css">
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="seeAllItemsMenuButton" mnemonicParsing="false" text="See All Items" />
+                        <MenuItem fx:id="logoutMenuButton" mnemonicParsing="false" text="Logout" />
+                        <MenuItem fx:id="menuCloseButton" mnemonicParsing="false" text="Close" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children></AnchorPane>
+      <Label fx:id="successLabel" layoutX="425.0" layoutY="114.0" prefHeight="45.0" prefWidth="364.0" text="Task added successfully! Add another task?" textFill="#434343" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="myToDosButton" layoutX="575.0" layoutY="547.0" prefHeight="35.0" prefWidth="211.0" style="-fx-background-color: #7f0000;" text="My to do items (3)" textFill="WHITE" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="errorLabel" layoutX="234.0" layoutY="412.0" prefHeight="60.0" prefWidth="334.0" text="Please make sure you write something!" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="addItemDatePicker" layoutX="274.0" layoutY="320.0" />
+      <Label layoutX="181.0" layoutY="326.0" prefHeight="28.0" prefWidth="84.0" text="Due Date" textFill="RED">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTimePicker fx:id="addItemTimePicker" layoutX="449.0" layoutY="320.0" />
+   </children>
+</AnchorPane>

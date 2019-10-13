@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AddItemController">
+   <children>
+      <AnchorPane prefHeight="90.0" prefWidth="800.0" style="-fx-background-color: #c62828;">
+         <children>
+            <Label alignment="CENTER" layoutX="270.0" layoutY="22.0" prefHeight="49.0" prefWidth="260.0" text="THE TO DO LIST" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="logoutAddItem" alignment="CENTER" layoutX="651.0" layoutY="26.0" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: #8e0000;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Tai Le" size="14.0" />
+               </font>
+            </JFXButton>
+            <MenuBar fx:id="addItemMenu" prefWidth="55.0" style="-fx-background-color: #c62828;" stylesheets="@../css/style.css">
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="addItemButton" mnemonicParsing="false" text="Add Item" />
+                        <MenuItem fx:id="seeAllItemsMenuButton" mnemonicParsing="false" text="See All Items" />
+                        <MenuItem fx:id="logoutMenuButton" mnemonicParsing="false" text="Logout" />
+                        <MenuItem fx:id="menuCloseButton" mnemonicParsing="false" text="Close" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="addButton" fitHeight="111.0" fitWidth="113.0" layoutX="345.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/baseline_note_add_black_48dp.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="noTaskLabel" alignment="CENTER" layoutX="309.0" layoutY="257.0" prefHeight="42.0" prefWidth="181.0" text="No tasks for today!" textFill="#544f4f">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

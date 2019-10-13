@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #c62828;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.LoginController">
+   <children>
+      <AnchorPane layoutY="90.0" prefHeight="510.0" prefWidth="800.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label alignment="CENTER" layoutX="298.0" layoutY="14.0" prefHeight="11.0" prefWidth="204.0" text="Login" textFill="#8d6e63">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="loginButton" layoutX="286.0" layoutY="174.0" prefHeight="38.0" prefWidth="228.0" style="-fx-background-color: #424242;" text="Login" textFill="#ffffff">
+               <font>
+                  <Font name="Microsoft Tai Le" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="loginUsername" focusColor="#8d6e63" layoutX="198.0" layoutY="68.0" prefHeight="30.0" prefWidth="403.0" promptText="Username" unFocusColor="#ff5f52">
+               <font>
+                  <Font name="Microsoft Tai Le" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="loginPassword" focusColor="#8d6e63" layoutX="198.0" layoutY="120.0" prefHeight="23.0" prefWidth="403.0" promptText="Password" unFocusColor="#ff5f52">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <Label fx:id="enterYourCredentialsLabel" alignment="CENTER" layoutX="184.0" layoutY="255.0" prefHeight="46.0" prefWidth="432.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="270.0" layoutY="22.0" prefHeight="52.0" prefWidth="260.0" text="THE TO DO LIST" textAlignment="CENTER" textFill="#f2f2f2">
+         <font>
+            <Font name="System Italic" size="36.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="loginSignupButton" alignment="CENTER" layoutX="711.0" layoutY="22.0" prefHeight="38.0" prefWidth="74.0" style="-fx-background-color: #8e0000;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="Microsoft Tai Le" size="14.0" />
+         </font>
+      </JFXButton>
+      <MenuBar fx:id="loginMenu" prefWidth="55.0" style="-fx-background-color: #c62828;" stylesheets="@../css/style.css">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="menuCloseButton" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

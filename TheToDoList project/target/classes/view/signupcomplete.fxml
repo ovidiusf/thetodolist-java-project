@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="dialogBoxSignupComplete" alignment="CENTER" prefHeight="127.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.SignupCompleteController">
+   <children>
+      <Label alignment="CENTER" prefHeight="50.0" prefWidth="188.0" text="Signup complete!" textFill="#d01c1c">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="signUpCompleteButton" alignment="CENTER" buttonType="RAISED" prefHeight="42.0" prefWidth="115.0" ripplerFill="WHITE" style="-fx-background-color: #645959;" text="OK" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</VBox>

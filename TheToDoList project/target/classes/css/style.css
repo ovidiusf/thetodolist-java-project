@@ -1,0 +1,9 @@
+.menu .label
+{
+     -fx-text-fill: white;
+     -fx-font-size: 15 pt;
+}
+
+.menu-item .label{
+    -fx-text-fill: black;
+}

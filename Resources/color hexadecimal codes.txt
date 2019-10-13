@@ -1,0 +1,5 @@
+#c62828 - burgundi red - primary
+#ff5f52 - light primary
+#8e0000 - dark primary
+#8d6e63 - grey - secondary
+#ffffff - text color

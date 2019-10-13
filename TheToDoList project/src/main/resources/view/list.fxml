@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ListController">
+   <children>
+      <AnchorPane prefHeight="90.0" prefWidth="800.0" style="-fx-background-color: #c62828;">
+         <children>
+            <Label layoutX="107.0" layoutY="23.0" prefHeight="49.0" prefWidth="240.0" text="My to do items" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="33.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="logoutButtonList" alignment="CENTER" layoutX="648.0" layoutY="4.0" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: #8e0000;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Tai Le" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="refreshListButton" fitHeight="51.0" fitWidth="54.0" layoutX="739.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-update-100.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="688.0" layoutY="46.0" prefHeight="38.0" prefWidth="51.0" text="Refresh" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="backAddItemScreenButton" alignment="CENTER" layoutX="477.0" layoutY="4.0" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: #8e0000;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Tai Le" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXListView fx:id="listTasks" layoutX="361.0" layoutY="94.0" prefHeight="501.0" prefWidth="436.0" style="-fx-background-color: #ffcccb;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXListView>
+      <AnchorPane layoutX="14.0" layoutY="110.0" prefHeight="454.0" prefWidth="391.0">
+         <children>
+            <JFXButton fx:id="listSaveTaskButton" layoutX="78.0" layoutY="209.0" prefHeight="49.0" prefWidth="160.0" style="-fx-background-color: #c62828;" text="Save Task" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </JFXButton>
+            <JFXTextField fx:id="listDescriptionField" focusColor="#c62828" layoutY="132.0" prefHeight="49.0" prefWidth="328.0" promptText="Description" unFocusColor="#c37dbd">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="listTaskField" focusColor="#c62828" layoutY="70.0" prefHeight="51.0" prefWidth="328.0" promptText="Task" unFocusColor="#ab1b9d">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

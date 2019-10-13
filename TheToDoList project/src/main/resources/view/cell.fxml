@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchorPane" prefHeight="128.0" prefWidth="392.0" style="-fx-background-color: #6d6d6d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" layoutX="88.0" layoutY="96.0" prefHeight="25.0" prefWidth="236.0" style="-fx-background-color: ffffff;">
+         <children>
+            <Label fx:id="dueDateLabel" alignment="CENTER" prefHeight="25.0" prefWidth="221.0" style="-fx-background-color: #ffffff;" text="Due Date" textFill="#ff6767">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="88.0" layoutY="68.0" prefHeight="25.0" prefWidth="236.0" style="-fx-background-color: ffffff;">
+         <children>
+      
+                        <Label fx:id="dateLabel" alignment="CENTER" prefHeight="25.0" prefWidth="221.0" style="-fx-background-color: #ffffff;" text="Date Created" textFill="#385e3d">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+         </children>
+      </VBox>
+
+      <ImageView fx:id="iconImageView" fitHeight="52.0" fitWidth="48.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-tasks-100.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="taskLabel" layoutX="50.0" layoutY="2.0" prefHeight="25.0" prefWidth="303.0" text="Task" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Regular" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="descriptionLabel" layoutX="50.0" layoutY="29.0" prefHeight="31.0" prefWidth="303.0" style="-fx-background-color: #ffffff;" text="Description" textFill="#250b0b">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ImageView fx:id="deleteButton" fitHeight="38.0" fitWidth="35.0" layoutX="343.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-delete-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="updateButton" fitHeight="35.0" fitWidth="41.0" layoutX="353.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-update-100.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="70.0" prefHeight="20.0" prefWidth="59.0" text="Created" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="96.0" prefHeight="20.0" prefWidth="59.0" text="Due Date" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>
